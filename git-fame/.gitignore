@@ -1,0 +1,17 @@
+*.py[cod]
+*.so
+__pycache__/
+
+# Packages
+/gitfame/_dist_ver.py
+/*.egg*/
+/build/
+/dist/
+/git-fame_*.snap
+/.dockerignore
+
+# Unit test / coverage reports
+/.tox/
+/.coverage*
+/coverage.xml
+/.pytest_cache/

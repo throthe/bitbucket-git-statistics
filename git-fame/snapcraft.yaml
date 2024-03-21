@@ -1,0 +1,28 @@
+name: git-fame
+summary: Pretty-print `git` repository collaborators sorted by contributions
+description: https://github.com/casperdcl/git-fame
+adopt-info: git-fame
+grade: stable
+confinement: strict
+base: core22
+license: MPL-2.0
+parts:
+  git-fame:
+    plugin: python
+    python-packages: [pyyaml]
+    source: .
+    build-snaps:
+    - snapd
+    build-packages: [git]
+    stage-packages: [git]
+    override-build: |
+        craftctl default
+        cp $SNAPCRAFT_PART_BUILD/git-fame_completion.bash $SNAPCRAFT_PART_INSTALL/completion.sh
+    override-stage: |
+        craftctl default
+        craftctl set version=$(bin/python3 -m gitfame --version)
+apps:
+  git-fame:
+    command: bin/git-fame
+    completer: completion.sh
+    plugs: [home]

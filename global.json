@@ -1,0 +1,18 @@
+{
+    "project_keys": [ "AKSES", "C4C", "DMDB", "MOBI", "MOS" ],
+    "project_keys_dev": [ "C4C" ],
+
+    "analyzer": {
+        "since": "4.weeks",
+        "silent": true,
+        "branch": "master",
+        "loc": "ins,del",
+        "M": true,
+        "C": true,
+        "show_email": false,
+        "show_total": true,
+        "format": "json",
+        "out_dir": "reports",
+        "save_data": true
+    }
+}

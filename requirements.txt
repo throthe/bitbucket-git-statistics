@@ -1,0 +1,15 @@
+# -----------------------------------------
+# INSTALL requirements.txt in venv
+# $> .venv/Scripts/activate
+# $> py -m pip install -r requirements.txt
+# -----------------------------------------
+
+######## PACKAGES #########
+
+# Python-dotenv reads key-value pairs from a .env file and can set them as environment variables.
+# https://pypi.org/project/python-dotenv/
+python-dotenv==1.0.0
+
+# Requests is an elegant and simple HTTP library for Python.
+# https://requests.readthedocs.io/en/latest/
+requests==2.31.0
