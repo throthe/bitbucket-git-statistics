@@ -9,6 +9,9 @@ The tool is based on git-fame 2.0.1 and adjusted to make the inserted and delete
 * create virtual environment: ```python -m venv ./.venv```
 * activagte virtual environment (Windows) ```.venv/Scripts/activate```
 * install packages: ```python -m pip install -r requirements.txt```
+* rename the `.env.template` file to `.env`
+* add your bitbucket USER NAME and APP PASSWORD
+* add your bitbucket WORKSPACE
 * run statistics: ```python -m main```
 
 # Git-Fame (in folder ./git-fame)
